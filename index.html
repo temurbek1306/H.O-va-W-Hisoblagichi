@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.O va W Hisoblagichi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>H.O va W Hisoblagichi</h1>
+
+        <div class="calculator">
+            <h2>Qiymatni Hisoblash</h2>
+            <label for="x">x:</label>
+            <input type="number" id="x" step="any">
+            <label for="x1">x1:</label>
+            <input type="number" id="x1" step="any">
+            <label for="m">m:</label>
+            <input type="number" id="m" step="any">
+            <button onclick="calculateValue()">Hisobla</button>
+            <p id="result-value"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>x1 ni Hisoblash</h2>
+            <label for="x-x1">x:</label>
+            <input type="number" id="x-x1" step="any">
+            <label for="m-x1">m:</label>
+            <input type="number" id="m-x1" step="any">
+            <label for="value-x1">Qiymat:</label>
+            <input type="number" id="value-x1" step="any">
+            <button onclick="calculateX1()">Hisobla</button>
+            <p id="result-x1"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>x ni Hisoblash</h2>
+            <label for="x1-x">x1:</label>
+            <input type="number" id="x1-x" step="any">
+            <label for="m-x">m:</label>
+            <input type="number" id="m-x" step="any">
+            <label for="value-x">Qiymat:</label>
+            <input type="number" id="value-x" step="any">
+            <button onclick="calculateX()">Hisobla</button>
+            <p id="result-x"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>m ni Hisoblash</h2>
+            <label for="x-m">x:</label>
+            <input type="number" id="x-m" step="any">
+            <label for="x1-m">x1:</label>
+            <input type="number" id="x1-m" step="any">
+            <label for="value-m">Qiymat:</label>
+            <input type="number" id="value-m" step="any">
+            <button onclick="calculateM()">Hisobla</button>
+            <p id="result-m"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
